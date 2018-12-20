@@ -1,0 +1,5 @@
+curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-cologne-dortmund.apps.pikes.pal.pivotal.io/registration -d'{"name": "Patrick"}'
+curl -i -XPOST -H"Content-Type: application/json" https://projects-pal-cologne-dortmund.apps.pikes.pal.pivotal.io/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": 2}"
+curl -i -XPOST -H"Content-Type: application/json" https://allocations-pal-cologne-dortmund.apps.pikes.pal.pivotal.io/allocations -d"{\"projectId\": 1, \"userId\": 2, \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+curl -i -XPOST -H"Content-Type: application/json" https://backlog-pal-cologne-dortmund.apps.pikes.pal.pivotal.io/stories -d"{\"projectId\": 1, \"name\": \"Find some reeds\"}"
+curl -i -XPOST -H"Content-Type: application/json" https://timesheets-pal-cologne-dortmund.apps.pikes.pal.pivotal.io/time-entries/ -d"{\"projectId\":1, \"userId\": 2, \"date\": \"2015-05-17\", \"hours\": 6}"
